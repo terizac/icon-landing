@@ -18875,3 +18875,27 @@ img {
   color: transparent !important;
  -webkit-text-stroke: 1px #000;
 }
+
+.light-scheme .de-gradient-edge-top {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.light-scheme .de-pricing-s1 .d-price {
+  color: #000;
+}
+
+.light-scheme .de-pricing-s1 .d-list li {
+  color: #000;
+}
+
+.light-scheme .de-pricing-s1 .d-list li.no {
+  color: #000;
+}
+
+.light-scheme .d-item-txt {
+  color: #000;
+}
+
+.light-scheme .float-text a {
+  color: #000;
+}

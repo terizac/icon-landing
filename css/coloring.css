@@ -639,7 +639,7 @@ footer.footer-light{
 
 /* 導航和選單 */
 .light-scheme #mainmenu a {
-    color: #333333;
+    color: #fff;
 }
 
 .light-scheme #mainmenu li ul {
