@@ -18899,3 +18899,16 @@ img {
 .light-scheme .float-text a {
   color: #000;
 }
+
+.light-scheme .menu_side_area a.btn-line {
+  color: #333333;
+  border: solid 1px #333333;
+}
+
+.light-scheme .lead {
+  color: #fff;
+}
+
+.light-scheme .img-deco-1 {
+  background: #000;
+}

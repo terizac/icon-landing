@@ -1,6 +1,12 @@
 jQuery(document).ready(function() {
-        jQuery(function () {
-            jQuery('#defaultCountdown').countdown({until: new Date(2023, 11, 3, 8)}); // year, month, date, hour
+    $(function () {
+        // 設定目標日期為 2024年12月3日
+        var austDay = new Date(2024, 11, 3); // 注意：月份是從0開始計算，所以12月是11
+        $('#defaultCountdown').countdown({
+            until: austDay,
+            format: 'DHMS',
+            padZeroes: true
         });
+    });
 });		
 

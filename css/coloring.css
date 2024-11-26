@@ -678,11 +678,6 @@ footer.footer-light{
     color: #ffffff;
 }
 
-.light-scheme .btn-line {
-    color: #333333;
-    border: solid 1px #333333;
-}
-
 /* 表格 */
 .light-scheme table {
     background: #ffffff;
