@@ -318,13 +318,13 @@ header.smaller #mainmenu ul ul {
 header.smaller {
   position: fixed;
   top: 0px;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, 1);
 }
 
 
-.scroll-down {
+/* .scroll-down {
     margin-top: -90px;
-}
+} */
 
 .scroll-up {
     margin-top: 0;
@@ -13067,6 +13067,8 @@ i.big {
 
 .schedule-item {
   padding: 40px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .schedule-listing:nth-child(even) {
@@ -13085,6 +13087,7 @@ i.big {
 
 .schedule-item .sc-pic {
   width: 120px;
+  margin-bottom: 32px;
 }
 
 .schedule-item .sc-pic img {

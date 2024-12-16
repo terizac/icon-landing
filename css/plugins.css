@@ -33,7 +33,7 @@
   direction: rtl;
 }
 .countdown-holding span {
-  color: #888;
+  color: #fff;
 }
 .countdown-row {
   clear: both;
@@ -148,5 +148,5 @@
 
 .text-dark .countdown-amount,
 .text-dark .countdown-period{
-  color:#111111;
+  color:#fff;
 }

@@ -6,7 +6,7 @@
 	direction: rtl;
 }
 .countdown-holding span {
-	color: #888;
+	color: #fff;
 }
 .countdown-row {
 	clear: both;
@@ -24,7 +24,7 @@
 .countdown-amount {
 	font-weight:300;
     font-size: 48px;
-	color:#333;
+	color:#fff;
 }
 .dark-scheme .countdown-amount{
 	color: #ffffff;

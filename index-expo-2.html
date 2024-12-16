@@ -18,6 +18,14 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css" >
     <!-- color scheme -->
     <link id="colors" href="css/colors/blue-teal.css" rel="stylesheet" type="text/css" >
+    <style>
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2000;
+        }
+    </style>
 </head>
 
 <body class="light-scheme">
@@ -28,11 +36,11 @@
         <!-- page preloader close -->
 
         <!-- header begin -->
-        <header class="transparent">
+        <header class="transparent" id="main-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="de-flex sm-pt10">
+                        <div class="de-flex sm-pt10" style="width: 100%;">
                             <div class="de-flex-col">
                                 <div class="de-flex-col">
                                     <!-- logo begin -->
@@ -47,7 +55,21 @@
                             </div>
                             <div class="de-flex-col header-col-mid">
                                 <ul id="mainmenu">
-                                    <li><a class="menu-item" href="#section-hero">Home</a>
+                                  <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                                    <img src="https://img.icons8.com/?size=100&id=8113&format=png&color=ffffff" alt="" style="width: 20px; height: 20px;margin-left: 10px;">
+                                    <!-- <div class="de-flex-col">
+                                      <div class="menu_side_area">
+                                          <a href="tickets.html" class="btn-line">Buy Ticket</a>
+                                          <span id="menu-btn"></span>
+                                      </div>
+                                  </div> -->
+                                </div>
+                                    <!-- <li><a class="menu-item" href="#section-hero">Home</a>
                                         <ul>
                                             <li><a class="menu-item" href="index.html">Home Expo One</a></li>
                                             <li><a class="menu-item" href="index-expo-2.html">Home Expo Two</a></li>
@@ -62,15 +84,10 @@
                                     <li><a class="menu-item" href="#section-tickets">Tickets</a></li>
                                     <li><a class="menu-item" href="#section-gallery">Gallery</a></li> 
                                     <li><a class="menu-item" href="#section-location">Getting There</a></li>
-                                    <li><a class="menu-item" href="news.html">News</a></li>                                  
+                                    <li><a class="menu-item" href="news.html">News</a></li>                                   -->
                                 </ul>
                             </div>
-                            <div class="de-flex-col">
-                                <div class="menu_side_area">
-                                    <a href="tickets.html" class="btn-line">Buy Ticket</a>
-                                    <span id="menu-btn"></span>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -92,15 +109,15 @@
 
             <div id="top"></div>
             <section id="section-hero" class="jarallax">
-                <img src="https://images.unsplash.com/photo-1561617928-1a36d1860d55?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="jarallax-img" alt="">
+                <img src="https://kith.com/cdn/shop/files/womens-desktop_d7b4dc96-611a-4766-b84a-f8de20342780.jpg?v=1732890611&width=1920" class="jarallax-img" alt="">
                 <div class="container position-relative z1000 wow fadeInDown">
                     <div class="row align-items-center position-relative">
                         <div class="spacer-double d-lg-none d-sm-block"></div>
                         <div class="col-lg-12 text-center z1000">
                             <div class="spacer-double"></div>
-                            <h5 class="mb-4 s2"><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-calendar-o"></i>December 3rd to 7th</span><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-map-marker"></i>Los Angeles, California</span></h5>
+                            <h5 class="mb-4 s2" style="background: #fff; color: #000;"><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-calendar-o"></i>December 3rd to 7th</span><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-map-marker"></i>Los Angeles, California</span></h5>
                             <div class="clearfix"></div>
-                            <h1 class="ultra-big text-uppercase mb-4 wow fadeInRight"><span class="wow fadeInLeft" data-wow-delay=".4s">ICON <span class="text-gradient">'24</span></h1>
+                            <h1 class="ultra-big text-uppercase mb-4 wow fadeInRight" style="color: #fff;"><span class="wow fadeInLeft" data-wow-delay=".4s">ICON <span class="text-gradient">'24</span></h1>
                             <div class="clearfix"></div>
                             <div id="defaultCountdown" class="countdown-s2" ></div>
                             <div class="spacer-single"></div>
@@ -117,10 +134,10 @@
 
                     </div>
                 </div>
-                <div class="de-gradient-edge-bottom"></div>
+                <!-- <div class="de-gradient-edge-bottom"></div> -->
             </section>
 
-            <section aria-label="section" class="no-top no-bottom">
+            <!-- <section aria-label="section" class="no-top no-bottom">
                 <div class="wow fadeInRight d-flex">
                   <div class="de-marquee-list wow">
                     <div class="d-item">
@@ -163,7 +180,7 @@
                      </div>
                   </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- <section id="section-about" aria-label="section" class="no-bottom">
 
@@ -316,11 +333,6 @@
                                 </div>
                             </div>
                         </div> -->
-                        <div class="col-lg-6">
-                          <div class="text-center" style="margin-top: 40px;">
-                              <a href="#" class="btn-main wow fadeInUp big">Artists</a>
-                          </div>
-                      </div>
                     </div>
                 </div>
 
@@ -328,7 +340,7 @@
             </section>
 
             <section id="section-schedule" class="jarallax no-bottom">
-                <img src="images/background/4.jpg" class="jarallax-img" alt="">
+                <!-- <img src="images/background/4.jpg" class="jarallax-img" alt=""> -->
                 <div class="de-gradient-edge-top"></div>
                 <div class="container position-relative z1000">
                     <div class="row">
@@ -374,72 +386,138 @@
                                                             <div class="sc-pic">
                                                                 <img src="images/person/1.jpg" alt="">
                                                             </div>
-                                                            <div class="sc-name">
+                                                            <div class="sc-pic">
+                                                              <img src="images/person/1.jpg" alt="">
+                                                          </div>
+                                                          <div class="sc-pic">
+                                                            <img src="images/person/1.jpg" alt="">
+                                                        </div>
+                                                        <div class="sc-pic">
+                                                          <img src="images/person/1.jpg" alt="">
+                                                      </div>
+                                                      <div class="sc-pic">
+                                                        <img src="images/person/1.jpg" alt="">
+                                                    </div>
+                                                    <div class="sc-pic">
+                                                      <img src="images/person/1.jpg" alt="">
+                                                  </div>
+                                                  <div class="sc-pic">
+                                                    <img src="images/person/1.jpg" alt="">
+                                                </div>
+                                                <div class="sc-pic">
+                                                  <img src="images/person/1.jpg" alt="">
+                                              </div>
+                                              <div class="sc-pic">
+                                                <img src="images/person/1.jpg" alt="">
+                                            </div>
+                                            <div class="sc-pic">
+                                              <img src="images/person/1.jpg" alt="">
+                                          </div>
+                                          <div class="sc-pic">
+                                            <img src="images/person/1.jpg" alt="">
+                                        </div>
+                                        <div class="sc-pic">
+                                          <img src="images/person/1.jpg" alt="">
+                                      </div>
+                                      <div class="sc-pic">
+                                        <img src="images/person/1.jpg" alt="">
+                                    </div>
+                                    <div class="sc-pic">
+                                      <img src="images/person/1.jpg" alt="">
+                                  </div>
+                                  <div class="sc-pic">
+                                    <img src="images/person/1.jpg" alt="">
+                                </div>
+                                <div class="sc-pic">
+                                  <img src="images/person/1.jpg" alt="">
+                              </div>
+                              <div class="sc-pic">
+                                <img src="images/person/1.jpg" alt="">
+                            </div>
+                            <div class="sc-pic">
+                              <img src="images/person/1.jpg" alt="">
+                          </div>
+                          <div class="sc-pic">
+                            <img src="images/person/1.jpg" alt="">
+                        </div>
+                        <div class="sc-pic">
+                          <img src="images/person/1.jpg" alt="">
+                      </div>
+                      <div class="sc-pic">
+                        <img src="images/person/1.jpg" alt="">
+                    </div>
+                    <div class="sc-pic">
+                      <img src="images/person/1.jpg" alt="">
+                  </div>
+                  <div class="sc-pic">
+                    <img src="images/person/1.jpg" alt="">
+                </div>
+                <div class="sc-pic">
+                  <img src="images/person/1.jpg" alt="">
+              </div>
+              <div class="sc-pic">
+                <img src="images/person/1.jpg" alt="">
+            </div>
+            <div class="sc-pic">
+              <img src="images/person/1.jpg" alt="">
+          </div>
+          <div class="sc-pic">
+            <img src="images/person/1.jpg" alt="">
+        </div>
+        <div class="sc-pic">
+          <img src="images/person/1.jpg" alt="">
+      </div>
+      <div class="sc-pic">
+        <img src="images/person/1.jpg" alt="">
+    </div>
+    <div class="sc-pic">
+      <img src="images/person/1.jpg" alt="">
+  </div>
+  <div class="sc-pic">
+    <img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+  <img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+<div class="sc-pic">
+<img src="images/person/1.jpg" alt="">
+</div>
+                                                            <!-- <div class="sc-name">
                                                                 <h4>Elon Musk</h4>
                                                                 <span>Founder & CEO</span>
                                                             </div>
                                                             <div class="sc-info">
                                                                 <h3>Autonomous Vehicles and the Future of Transportation</h3>
                                                                 <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <!-- <div class="sc-time">12:00 - 14:00 PM</div> -->
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/2.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Junior Cuther</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Evolution of Sustainable Automotive Solutions</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <!-- <div class="sc-time">16:00 - 18:00 PM</div> -->
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/3.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Claris Grinage</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>A Closer Look at High-Performance Car Engines</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <!-- <div class="sc-time">20:00 - 22:00 PM</div> -->
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/4.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Donnetta Letran</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Art of Restoring Vintage Cars</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="text-center" style="margin-top: 40px;">
+                                                  <a href="#" class="btn-main wow fadeInUp big">Artists</a>
+                                              </div>
                                             </div>
                                         </div>
 
@@ -942,8 +1020,26 @@
                     </div>
                 </div>
             </section> -->
-
             <section class="pt60 no-bottom">
+              <div class="container">
+                <div class="col-lg-6 position-relative" data-jarallax-element="60">
+                  <div class="position-relative z1000">
+                      <h2 class="text-uppercase wow fadeInRight" data-wow-delay=".3s">Presenting <span class="text-line">experts</span> in the <span class="text-gradient">automotive</span> Industry</h2>
+                      <div class="row">
+                          <div class="col-lg-2 col-2">
+                              <img src="images/misc/arrow-up-right.png" class="img-fluid" alt="" data-jarallax-element="-30">
+                          </div>
+                          <div class="col-lg-10 col-10">
+                                  <p class="wow fadeInRight" data-wow-delay=".4s">Roam the aisles filled with gleaming automobiles, interact with industry experts who breathe life into mechanical marvels with their knowledge, and immerse yourself in the symphony of engines, all united in the pursuit of pushing boundaries and exceeding expectations.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <img src="images/misc/circle-gradient-2.png" class="position-absolute top-50 start-50 translate-middle" alt="">
+              </div>
+              </div>
+            </section>
+
+            <section class="pt120 no-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
@@ -1044,6 +1140,16 @@
     <script src="js/custom-marquee.js"></script>
     <script src="js/jquery.countdown.js"></script>
     <script src="js/countdown-custom.js"></script>
+    <script>
+        window.onscroll = function() {
+            var header = document.getElementById("main-header");
+            if (window.pageYOffset > 0) {
+                header.classList.add("fixed-header");
+            } else {
+                header.classList.remove("fixed-header");
+            }
+        };
+    </script>
 
 </body>
 
