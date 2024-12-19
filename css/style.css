@@ -19051,3 +19051,30 @@ img {
               .text-16 {
                 font-size: 16px;
               }
+              
+              .absolute {
+                position: absolute;
+              }
+
+              .left-0 {
+                left: 0;
+              }
+              .right-0 {
+                right: 0;
+              }
+              .top-0 {
+                top: 0;
+              } 
+              .bottom-0 {
+                bottom: 0;
+              } 
+              .w-full {
+                width: 100%;
+              }
+              .h-full {
+                height: 100%;
+              }
+              
+              .fa-2xl {
+                font-size: 24px !important;
+              }
