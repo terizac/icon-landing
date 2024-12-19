@@ -3696,8 +3696,8 @@ a.btn-main img {
 }
 
 a.btn-main.big{
-  font-size: 30px;
-  padding: 20px 30px;
+  font-size: 24px;
+  padding: 16px 28px;
 }
 
 a.btn-sc {
@@ -11195,7 +11195,7 @@ a.img-icon-zoom {
 
 #sidebar {
   padding-left: 30px;
-  position: relative;
+  /* position: relative; */
 }
 
 .rtl #sidebar {
@@ -18915,3 +18915,139 @@ img {
 .light-scheme .img-deco-1 {
   background: #000;
 }
+
+/* custom */
+
+.text-32 {
+  font-size: 32px;
+}
+
+.artist-btn {
+  margin-top: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.de-pricing-s1 .d-list { 
+  height: 140px;
+}
+
+/* 購買票券卡片邊框樣式 */
+.de-pricing-s1 {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(5px);
+        transition: all 0.3s ease;
+    }
+
+    .de-pricing-s1:hover {
+        transform: translateY(-10px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .de-pricing-s1 .d-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* 側邊欄 */
+
+    .sidebar {
+        display: none;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 2001;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .sidebar-header {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+
+    .close-btn {
+        color: #fff;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    .sidebar-content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-content ul li {
+        padding: 15px 25px;
+    }
+
+    .sidebar-content ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar-content ul li a:hover {
+        color: #ccc;
+        padding-left: 10px;
+    }
+
+    .sidebar.active {
+        width: 300px;
+    }
+
+    /* 主辦單位 */
+
+    .organizer-card {
+                  background: rgba(255, 255, 255, 0.05);
+                  backdrop-filter: blur(5px);
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  border-radius: 15px;
+                  padding: 30px;
+                  height: 100%;
+                  transition: all 0.3s ease;
+              }
+          
+              .card-logo {
+                  height: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              }
+          
+              .card-logo img {
+                  max-height: 100%;
+                  width: auto;
+              }
+          
+              .organizer-card h3 {
+                  font-size: 24px;
+                  margin-bottom: 15px;
+                  color: #fff;
+              }
+          
+              .organizer-card p {
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 16px;
+                  line-height: 1.6;
+              }
+
+              .text-16 {
+                font-size: 16px;
+              }

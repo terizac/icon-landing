@@ -29,6 +29,24 @@
 </head>
 
 <body class="light-scheme">
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+    </div>
+    <div class="sidebar-content">
+        <ul>
+            <li><a href="#news">最新消息</a></li>
+            <li><a href="#about">活動介紹</a></li>
+            <li><a href="#artists">藝術家</a></li>
+            <li><a href="#tickets">票券購買</a></li>
+            <li><a href="#works">作品資訊</a></li>
+            <li><a href="#schedule">活動日程</a></li>
+            <li><a href="#faq">常見問題</a></li>
+            <li><a href="#contact">聯絡我們</a></li>
+            <li><a href="#login">會員登入</a></li>
+        </ul>
+    </div>
+</div>
     <div id="wrapper">
         <div class="scrollbar"></div>
         <!-- page preloader begin -->
@@ -46,8 +64,9 @@
                                     <!-- logo begin -->
                                     <div id="logo">
                                         <a href="index.html">
-                                            <img class="logo-main" src="images/logo.png" alt="" >
-                                            <img class="logo-mobile" src="images/logo-mobile.png" alt="" >
+                                            <!-- <img class="logo-main" src="images/logo.png" alt="" >
+                                            <img class="logo-mobile" src="images/logo-mobile.png" alt="" > -->
+                                            LOGO
                                         </a>
                                     </div>
                                     <!-- logo close -->
@@ -57,11 +76,14 @@
                                 <ul id="mainmenu">
                                   <div class="social-icons">
                                     <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                                    <img src="https://img.icons8.com/?size=100&id=8113&format=png&color=ffffff" alt="" style="width: 20px; height: 20px;margin-left: 10px;">
+                                    <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                                    <!-- <a href="#"><i class="fa fa-twitter fa-lg"></i></a> -->
+                                    <!-- <a href="#"><i class="fa fa-linkedin fa-lg"></i></a> -->
+                                    <!-- <a href="#"><i class="fa fa-pinterest fa-lg"></i></a> -->
+                                    <!-- <a href="#"><i class="fa fa-rss fa-lg"></i></a> -->
+                                    <img src="https://img.icons8.com/?size=100&id=8113&format=png&color=ffffff" alt="" 
+     style="width: 20px; height: 20px; margin-left: 10px; cursor: pointer;" 
+     onclick="toggleSidebar()">
                                     <!-- <div class="de-flex-col">
                                       <div class="menu_side_area">
                                           <a href="tickets.html" class="btn-line">Buy Ticket</a>
@@ -97,14 +119,14 @@
         <!-- content begin -->
         <div class="no-bottom no-top" id="content">
             <!-- float text begin -->
-            <div class="float-text">
+            <!-- <div class="float-text">
                 <div class="de_social-icons">
                     <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
                     <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
                     <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
                 </div>
                 <span><a href="tickets.html">Get Ticket</a></span>
-            </div>
+            </div> -->
             <!-- float text close --> 
 
             <div id="top"></div>
@@ -115,9 +137,9 @@
                         <div class="spacer-double d-lg-none d-sm-block"></div>
                         <div class="col-lg-12 text-center z1000">
                             <div class="spacer-double"></div>
-                            <h5 class="mb-4 s2" style="background: #fff; color: #000;"><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-calendar-o"></i>December 3rd to 7th</span><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-map-marker"></i>Los Angeles, California</span></h5>
+                            <h5 class="mb-4 s2" style="background: #fff; color: #000;"><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-calendar-o"></i>2025/06/25 - 29</span><span class="wow fadeInRight" data-wow-delay=".2s"><i class="id-color fa fa-map-marker"></i>台北松山文創園區</span></h5>
                             <div class="clearfix"></div>
-                            <h1 class="ultra-big text-uppercase mb-4 wow fadeInRight" style="color: #fff;"><span class="wow fadeInLeft" data-wow-delay=".4s">ICON <span class="text-gradient">'24</span></h1>
+                            <h1 class="ultra-big text-uppercase mb-4 wow fadeInRight" style="color: #fff;"><span class="wow fadeInLeft" data-wow-delay=".4s">THE iCON<span class="text-gradient">'25</span></h1>
                             <div class="clearfix"></div>
                             <div id="defaultCountdown" class="countdown-s2" ></div>
                             <div class="spacer-single"></div>
@@ -198,8 +220,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 text-center">
-                            <h1 class="text-uppercase"><span class="wow fadeInUp">Intro</span> <span class="text-gradient wow fadeInUp" data-wow-delay="
-                                .3s">ICON</span></h1>
+                            <h1 class="text-uppercase"><span class="wow fadeInUp">#THEICON</span> <span class="text-gradient wow fadeInUp" data-wow-delay="
+                                .3s">2025</span></h1>
                         </div>
                     </div>
 
@@ -207,19 +229,25 @@
                         <div class="col-lg-6 position-relative">
                             <div class="images-deco-1">
                                 <img src="images/misc/car-1.jpg" class="d-img-1" alt="">
-                                <img src="images/misc/dotted.png" class="d-img-2" alt="" data-jarallax-element="40">
+                                <!-- <img src="images/misc/dotted.png" class="d-img-2" alt="" data-jarallax-element="40"> -->
                                 <div class="d-img-3 bg-color"></div>
                             </div>
                         </div>
                         <div class="col-lg-6 position-relative" data-jarallax-element="-60">
                             <div class="position-relative z1000">
-                                <h2 class="text-uppercase wow fadeInRight" data-wow-delay=".3s">Welcome to the <span class="text-line">Biggest</span> <span class="text-gradient">Auto Event</span> 2024</h2>
+                                <h2 class="text-uppercase wow fadeInRight" data-wow-delay=".3s">Welcome to <br />
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-gradient">THE iCON</span> 2025
+                                </h2>
                                 <div class="row">
                                     <div class="col-lg-2 col-2">
                                         <img src="images/misc/arrow-up-left.png" class="img-fluid" alt="" data-jarallax-element="30">
                                     </div>
                                     <div class="col-lg-10 col-10">
-                                            <p class="wow fadeInRight" data-wow-delay=".4s">Autovent a celebration of human ingenuity and a testament to the ever-evolving landscape of transportation. From sleek aerodynamics to revolutionary sustainable solutions, each exhibit embodies the spirit of progress that propels the automotive industry forward.</p>
+                                            <p class="wow fadeInRight" data-wow-delay=".4s">由香港HOW2WORK與台北THELITTLE HUT兩個單位攜手打造的仝新蓺術展臂概念。以蓺術家為主
+                                              導,提供獨立展示空間，為體現每位
+                                              蓺術家的個人風格和理念，也同時
+                                              帶動年輕創作者的創作動力及建立
+                                              不同的展出舞台。</p>
                                     </div>
                                 </div>
                             </div>
@@ -269,575 +297,30 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 position-relative" data-jarallax-element="60">
                             <div class="position-relative z1000">
-                                <h2 class="text-uppercase wow fadeInRight" data-wow-delay=".3s">Presenting <span class="text-line">experts</span> in the <span class="text-gradient">automotive</span> Industry</h2>
+                                <h3 class="text-uppercase fadeInRight text-32" data-wow-delay=".3s">台北展邀請超過 <span class="text-line">40</span> 位來自台港日美各地的新生 代藝術家參展,展出作品 <span class="text-gradient">500</span> 多件</h3>
                                 <div class="row">
                                     <div class="col-lg-2 col-2">
                                         <img src="images/misc/arrow-up-right.png" class="img-fluid" alt="" data-jarallax-element="-30">
                                     </div>
                                     <div class="col-lg-10 col-10">
-                                            <p class="wow fadeInRight" data-wow-delay=".4s">Roam the aisles filled with gleaming automobiles, interact with industry experts who breathe life into mechanical marvels with their knowledge, and immerse yourself in the symphony of engines, all united in the pursuit of pushing boundaries and exceeding expectations.</p>
+                                            <p class="wow fadeInRight" data-wow-delay=".4s">包括維畫、裝置以及聯名限量發行的藝術商品。「THE ICON』旨在通過獨立
+                                              個性的藝術語言,打破地域與年齡界限,迎接新一代藝術愛好者。</p>
                                     </div>
                                 </div>
                             </div>
                             <img src="images/misc/circle-gradient-2.png" class="position-absolute top-50 start-50 translate-middle" alt="">
+                            <a class="btn-main big fadeInLeft artist-btn" href="#section-tickets">藝術家介紹</a>
                         </div>
-                        <!-- <div class="col-lg-6">
-                            <div class="row g-3">
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Elon Musk</div>
-                                        <img src="images/person/1.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Junior Cuther</div>
-                                        <img src="images/person/2.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Claris Grinage</div>
-                                        <img src="images/person/3.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Donnetta Letran</div>
-                                        <img src="images/person/4.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Kizzie Mertz</div>
-                                        <img src="images/person/5.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Vernia Picot</div>
-                                        <img src="images/person/6.jpg" class="img-fluid" alt="" >
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Fermina Prass</div>
-                                        <img src="images/person/7.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="de-img-cap-1">
-                                        <div class="d-cap">Bonnie Torralba</div>
-                                        <img src="images/person/8.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="de-gradient-edge-bottom"></div>
-            </section>
-
-            <section id="section-schedule" class="jarallax no-bottom">
-                <!-- <img src="images/background/4.jpg" class="jarallax-img" alt=""> -->
-                <div class="de-gradient-edge-top"></div>
-                <div class="container position-relative z1000">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                            <h2 class="text-uppercase wow fadeInUp"><span class="text-line">Organizers</span> <span class="text-gradient">Intro</span></h2>
-                            <div class="spacer-single"></div>
-                        </div>
-
-                        <div class="col-md-12 wow fadeInUp">
-                            <div class="de_tab tab_style_4 text-center">
-                                <!-- <ul class="de_nav de_nav_dark">
-                                    <li class="active" data-link="#section-services-tab">
-                                        <h3>Day 1</h3>
-                                        <h4>Dec 3, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day 2</h3>
-                                        <h4>Dec 4, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day 3</h3>
-                                        <h4>Dec 5, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day 4</h3>
-                                        <h4>Dec 6, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day 5</h3>
-                                        <h4>Dec 7, 2023</h4>
-                                    </li>
-                                </ul> -->
-
-                                <div class="text-start">
-                                    <div class="de_tab_content">
-
-                                        <div id="tab1" class="tab_single_content dark">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <!-- <div class="sc-time">08:00 - 10:00 AM</div> -->
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/1.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-pic">
-                                                              <img src="images/person/1.jpg" alt="">
-                                                          </div>
-                                                          <div class="sc-pic">
-                                                            <img src="images/person/1.jpg" alt="">
-                                                        </div>
-                                                        <div class="sc-pic">
-                                                          <img src="images/person/1.jpg" alt="">
-                                                      </div>
-                                                      <div class="sc-pic">
-                                                        <img src="images/person/1.jpg" alt="">
-                                                    </div>
-                                                    <div class="sc-pic">
-                                                      <img src="images/person/1.jpg" alt="">
-                                                  </div>
-                                                  <div class="sc-pic">
-                                                    <img src="images/person/1.jpg" alt="">
-                                                </div>
-                                                <div class="sc-pic">
-                                                  <img src="images/person/1.jpg" alt="">
-                                              </div>
-                                              <div class="sc-pic">
-                                                <img src="images/person/1.jpg" alt="">
-                                            </div>
-                                            <div class="sc-pic">
-                                              <img src="images/person/1.jpg" alt="">
-                                          </div>
-                                          <div class="sc-pic">
-                                            <img src="images/person/1.jpg" alt="">
-                                        </div>
-                                        <div class="sc-pic">
-                                          <img src="images/person/1.jpg" alt="">
-                                      </div>
-                                      <div class="sc-pic">
-                                        <img src="images/person/1.jpg" alt="">
-                                    </div>
-                                    <div class="sc-pic">
-                                      <img src="images/person/1.jpg" alt="">
-                                  </div>
-                                  <div class="sc-pic">
-                                    <img src="images/person/1.jpg" alt="">
-                                </div>
-                                <div class="sc-pic">
-                                  <img src="images/person/1.jpg" alt="">
-                              </div>
-                              <div class="sc-pic">
-                                <img src="images/person/1.jpg" alt="">
-                            </div>
-                            <div class="sc-pic">
-                              <img src="images/person/1.jpg" alt="">
+                        <div class="col-lg-6 position-relative">
+                          <div class="images-deco-1">
+                              <img src="images/misc/car-1.jpg" class="d-img-1" alt="">
+                              <!-- <img src="images/misc/dotted.png" class="d-img-2" alt="" data-jarallax-element="40"> -->
+                              <div class="d-img-3 bg-color"></div>
                           </div>
-                          <div class="sc-pic">
-                            <img src="images/person/1.jpg" alt="">
-                        </div>
-                        <div class="sc-pic">
-                          <img src="images/person/1.jpg" alt="">
                       </div>
-                      <div class="sc-pic">
-                        <img src="images/person/1.jpg" alt="">
-                    </div>
-                    <div class="sc-pic">
-                      <img src="images/person/1.jpg" alt="">
-                  </div>
-                  <div class="sc-pic">
-                    <img src="images/person/1.jpg" alt="">
-                </div>
-                <div class="sc-pic">
-                  <img src="images/person/1.jpg" alt="">
-              </div>
-              <div class="sc-pic">
-                <img src="images/person/1.jpg" alt="">
-            </div>
-            <div class="sc-pic">
-              <img src="images/person/1.jpg" alt="">
-          </div>
-          <div class="sc-pic">
-            <img src="images/person/1.jpg" alt="">
-        </div>
-        <div class="sc-pic">
-          <img src="images/person/1.jpg" alt="">
-      </div>
-      <div class="sc-pic">
-        <img src="images/person/1.jpg" alt="">
-    </div>
-    <div class="sc-pic">
-      <img src="images/person/1.jpg" alt="">
-  </div>
-  <div class="sc-pic">
-    <img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-  <img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-<div class="sc-pic">
-<img src="images/person/1.jpg" alt="">
-</div>
-                                                            <!-- <div class="sc-name">
-                                                                <h4>Elon Musk</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Autonomous Vehicles and the Future of Transportation</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div> -->
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center" style="margin-top: 40px;">
-                                                  <a href="#" class="btn-main wow fadeInUp big">Artists</a>
-                                              </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="tab2" class="tab_single_content dark">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">08:00 - 12:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/5.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Kizzie Mertz</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>How EVs are Transforming the Automotive Landscape</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">12:00 - 14:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/6.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Vernia Picot</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Latest Advances in Automotive Safety Technologies</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">16:00 - 18:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/7.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Fermina Prass</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Science of Car Design and Aerodynamics</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">20:00 - 22:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/1.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Elon Musk</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Role of IoT in Modern Automobiles</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="tab3" class="tab_single_content dark">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">08:00 - 12:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/2.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Junior Cuther</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Exploring the Rise of Off-Road and Adventure Vehicles</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">12:00 - 14:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/3.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Claris Grinage</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Quest for Fuel-Efficient and Hybrid Cars</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">16:00 - 18:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/4.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Donnetta Letran</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Ultimate Guide to High-End Automobiles</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">20:00 - 22:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/5.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Kizzie Mertz</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Women in the Automotive Industry</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="tab4" class="tab_single_content dark">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">08:00 - 12:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/6.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Vernia Picot</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Exploration of Self-Driving Car Regulations</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">12:00 - 14:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/7.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Fermina Prass</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The High-Tech World of Formula 1 Engineering</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">16:00 - 18:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/1.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Elon Musk</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>A Retrospective of Iconic Car Models</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">20:00 - 22:00 PM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/2.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Junior Cuther</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Crossover SUV Phenomenon</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="tab5" class="tab_single_content dar">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">08:00 - 12:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/1.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Elon Musk</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Art and Business of Electric Car</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">08:00 - 12:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/2.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Elon Musk</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Demystifying Engine Types and Performance</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">08:00 - 12:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/3.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Claris Grinage</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>The Evolution of Car Audio Systems</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">08:00 - 12:00 AM</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/person/4.jpg" alt="">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Donnetta Letran</h4>
-                                                                <span>Founder & CEO</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Close Event Ceremony &amp; Doorprize</h3>
-                                                                <p>Get ready to your excitement and fuel your passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to immerse yourself in the captivating world of cars!</p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                               
-                            </div>
-                        </div>
                     </div>
                 </div>
+
                 <div class="de-gradient-edge-bottom"></div>
             </section>
             
@@ -845,8 +328,32 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h2 class="text-uppercase wow fadeInUp">Buy <span class="text-gradient">Tickets</span></h2>
+                            <h2 class="text-uppercase wow fadeInUp">購買 <span class="text-gradient">票券</span></h2>
                             <div class="spacer-20"></div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="de-pricing-s1">
+                                <div class="d-content">
+                                    <h3>單日票<span>Ticket</span></h3>
+                                    <div class="d-price">
+                                        980
+                                    </div>
+                                    <ul class="d-list">
+                                        <li>指定日期入場</li>
+                                        <li>限量商品抽選資格</li>
+                                        <li>隨票附贈XXX</li>
+                                        <li>憑票兌換XXX</li>
+                                    </ul>
+                                    <div class="spacer-20"></div>
+                                    <div class="text-center">
+                                        <a class="btn-main big" href="tickets.html">立即購買</a>
+                                    </div>
+                                </div>
+                                <!-- <div class="d-deco-top"></div>
+                                <div class="d-deco-bottom"></div> -->
+                                <!-- <img src="images/misc/arrow-up-right.png" class="d-image-deco" alt=""> -->
+                            </div>
                         </div>
 
                         <div class="col-lg-4">
@@ -854,73 +361,47 @@
                                 <div class="d-content">
                                     <h3>VIP<span>Ticket</span></h3>
                                     <div class="d-price">
-                                        49
+                                        3,880
                                     </div>
                                     <ul class="d-list">
-                                        <li>Ticket for one day</li>
-                                        <li>Chance to win doorprize</li>
-                                        <li class="no">Free merchandise</li>
-                                        <li class="no">Free vouchers</li>
-                                        <li class="no">Meet the guest stars</li>
+                                        <li>指定日期提早2小時入場</li>
+                                        <li>限量商品抽選資格2次</li>
+                                        <li>活動限定XXX</li>
+                                        <li>憑票兌換XXX</li>
                                     </ul>
                                     <div class="spacer-20"></div>
                                     <div class="text-center">
-                                        <a class="btn-main" href="tickets.html">Buy Ticket</a>
+                                        <a class="btn-main big" href="tickets.html">立即購買</a>
                                     </div>
                                 </div>
-                                <div class="d-deco-top"></div>
-                                <div class="d-deco-bottom"></div>
-                                <img src="images/misc/arrow-up-right.png" class="d-image-deco" alt="">
+                                <!-- <div class="d-deco-top"></div>
+                                <div class="d-deco-bottom"></div> -->
+                                <!-- <img src="images/misc/arrow-up-right.png" class="d-image-deco" alt=""> -->
                             </div>
                         </div>
 
                         <div class="col-lg-4">
                             <div class="de-pricing-s1">
                                 <div class="d-content">
-                                    <h3>VVIP<span>Ticket</span></h3>
+                                    <h3>VVIP套票<span>Ticket</span></h3>
                                     <div class="d-price">
-                                        89
+                                        9,990
                                     </div>
                                     <ul class="d-list">
-                                        <li>Ticket for three days</li>
-                                        <li>Chance to win doorprize</li>
-                                        <li>Free merchandise</li>
-                                        <li class="no">Free vouchers</li>
-                                        <li class="no">Meet the guest stars</li>
+                                        <li>VIPNIGHT</li>
+                                        <li>活動日皆可提早2小時入場</li>
+                                        <li>限量商品抽選資格2次</li>
+                                        <li>活動限定XXX</li>
+                                        <li>憑票兌換XXX</li>
                                     </ul>
                                     <div class="spacer-20"></div>
                                     <div class="text-center">
-                                        <a class="btn-main" href="tickets.html">Buy Ticket</a>
+                                        <a class="btn-main big" href="tickets.html">立即購買</a>
                                     </div>
                                 </div>
-                                <div class="d-deco-top"></div>
-                                <div class="d-deco-bottom"></div>
-                                <img src="images/misc/arrow-up-right.png" class="d-image-deco" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="de-pricing-s1">
-                                <div class="d-content">
-                                    <h3>VVVIP<span>Ticket</span></h3>
-                                    <div class="d-price">
-                                        109
-                                    </div>
-                                    <ul class="d-list">
-                                        <li>Ticket for all days</li>
-                                        <li>Chance to win doorprize</li>
-                                        <li>Free merchandise</li>
-                                        <li>Free vouchers</li>
-                                        <li>Meet the guest stars</li>
-                                    </ul>
-                                    <div class="spacer-20"></div>
-                                    <div class="text-center">
-                                        <a class="btn-main" href="tickets.html">Buy Ticket</a>
-                                    </div>
-                                </div>
-                                <div class="d-deco-top"></div>
-                                <div class="d-deco-bottom"></div>
-                                <img src="images/misc/arrow-up-right.png" class="d-image-deco" alt="">
+                                <!-- <div class="d-deco-top"></div>
+                                <div class="d-deco-bottom"></div> -->
+                                <!-- <img src="images/misc/arrow-up-right.png" class="d-image-deco" alt=""> -->
                             </div>
                         </div>
                     </div>
@@ -1020,24 +501,102 @@
                     </div>
                 </div>
             </section> -->
-            <section class="pt60 no-bottom">
+            <section id="organizer" class="pt60">
               <div class="container">
-                <div class="col-lg-6 position-relative" data-jarallax-element="60">
-                  <div class="position-relative z1000">
-                      <h2 class="text-uppercase wow fadeInRight" data-wow-delay=".3s">Presenting <span class="text-line">experts</span> in the <span class="text-gradient">automotive</span> Industry</h2>
-                      <div class="row">
-                          <div class="col-lg-2 col-2">
-                              <img src="images/misc/arrow-up-right.png" class="img-fluid" alt="" data-jarallax-element="-30">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <h2 class="text-uppercase wow fadeInUp mb-4 text-center">
+                              <span class="text-line"></span> 
+                              <span class="text-gradient">主辦單位</span> 
+                              <span>ORGANIZER</span>
+                          </h2>
+                      </div>
+                  </div>
+                  
+                  <div class="row g-4">
+                      <!-- HOW2WORK -->
+                      <div class="col-lg-4">
+                          <div class="organizer-card">
+                              <div class="card-logo mb-4">
+                                  <img src="images/org/org1.png" alt="HOW2WORK" class="img-fluid">
+                              </div>
+                              <h3>How2work</h3>
+                              <p class="mt-3">HOW2WORK於2001年成立，是香港最早舆本地設計師和
+                                兿術家合作進行創新項目的先軀之一。該公司專門把設計和圖
+                                像轉化為3D作品，為角色和設計注入活力。近年來,該公司
+                                致力於支持和培養新晋設計師和兿術家，讓他們有機會創作兿
+                                術玩具，並為有興趣的人提供展示兿術的平台。</p>
+                                <h3>Quiet Gallery <span class="text-16">香港和日本</span></h3>
+                                <p class="mt-3">「在這寧静的空間中探索兿術,享受城市喧嚣中的寧谧。」
+                                  Quiet Gallery是一處寧静的兿廊，讓您可以暫時逃離城市的喧
+                                  鬧。步入我們簡約而隔音的展廳,發現來自新秀和知名兿術家的
+                                  創新作品。透過攝影、畫作、多媒體装置等不同方式欣賞兿術,所
+                                  有的展品都着重於寧静與反思。</p>
+                              <h3>Dotdotdot Gallery</h3>
+                              <p class="mt-3">Dotdotdot Gallery—直想探索新的兿術家和品牌，為香港觀衆和
+                                粉絲带來新的體驗。過去會舉辦過古濑壯平、小川耕平、Santa
+                                先生以及Rockin'Jelly Bean等兿術家十多場展覽,未來也在
+                                規劃更多展覽。</p>
                           </div>
-                          <div class="col-lg-10 col-10">
-                                  <p class="wow fadeInRight" data-wow-delay=".4s">Roam the aisles filled with gleaming automobiles, interact with industry experts who breathe life into mechanical marvels with their knowledge, and immerse yourself in the symphony of engines, all united in the pursuit of pushing boundaries and exceeding expectations.</p>
+                      </div>
+          
+                      <!-- THE LITTLE HUT -->
+                      <div class="col-lg-4">
+                          <div class="organizer-card">
+                              <div class="card-logo mb-4">
+                                  <img src="images/org/org2.png" alt="The Little Hut" class="img-fluid">
+                              </div>
+                              <h3>The Little Hut</h3>
+                              <p class="mt-3">成立於2018年的The Little Hut是一個專為
+                                兿術家和兿術愛好者打造的温暖空間。坐落於
+                                台北市東區,我們致力於成為一個多元的兿術
+                                空間,讓各種創意火花在這裸碰撞與閃耀。</p>
+                                <p class="mt-3">在The Little Hut,您可以欣賞到來自平面
+                                  及立體兿術家亦或是潮流玩具設計師等廣泛
+                                  創作者的獨特作品。無論是充滿想像力的平
+                                  面兿術,還是前衛的潮流玩具設計,每一件
+                                  作品都代表著兿術家們的心血與創意。</p>
+                                  <p class="mt-3">我們的展示空間温馨而充滿靈感，在這禪
+                                    每位兿術家們能夠自由表達他們的創作理
+                                    念，兿術愛好者們則可以近距離感受每一件
+                                    作品的獨特魅力。我們希望每一位踏進The
+                                    Little Hut的人，都能在這锂找到屬於自己
+                                    的兿術共鳴。</p>
+                          </div>
+                      </div>
+          
+                      <!-- PARADISE -->
+                      <div class="col-lg-4">
+                          <div class="organizer-card">
+                              <div class="card-logo mb-4">
+                                  <img src="images/org/org3.png" alt="Paradise Toy" class="img-fluid">
+                              </div>
+                              <h3>Paradise Toy</h3>
+                              <p class="mt-3">Paradise成立於2005年，坐落於台北市中
+                                心的東區商圈，進口來自日，港，歐,美各
+                                國不同的有趣商品，希望能带動生活中歡樂
+                                氣氛!</p>
+                              <p class="mt-3">
+                                近年來,Paradise也加入一些來自歐美和日
+                                本具有潜力成為未來經典的新潮流玩具和收
+                                藏品。這些商品設計新穎、题材前衛,雖在大
+                                衆神尚未廣為人知，但我們相信它們具有長
+                                遠的兿術和投資價值。例如某些以曆史感為
+                                設計主題的硬塑玩偶系列，以及取材於生活
+                                細節的概念公仔，均深受年輕創作者喜愛。
+                              </p>
+                              <p class="mt-3">
+                                舉凡設計師玩具，潮流公仔，日系食玩，動
+                                漫週邊,美系英雄玩具，港系的12时人偶
+                                都是Paradise的服務項目，近期也延伸至
+                                生活相關的創意雜貨,替大家枯燥带來新的
+                                樂趣!
+                              </p>
                           </div>
                       </div>
                   </div>
-                  <img src="images/misc/circle-gradient-2.png" class="position-absolute top-50 start-50 translate-middle" alt="">
               </div>
-              </div>
-            </section>
+          </section>
 
             <section class="pt120 no-bottom">
                 <div class="container">
@@ -1122,7 +681,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 text-lg-center text-sm-center">
-                        <img src="images/logo.png" class="" alt="">
+                        LOGO
                     </div>
                     <div class="col-lg-4 text-lg-end text-sm-center">
                         Copyright 2023 - Autovent by Designesia
@@ -1150,6 +709,26 @@
             }
         };
     </script>
+
+<script>
+  function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+  }
+
+  // 點擊側邊欄外的區域關閉側邊欄
+  document.addEventListener('click', function(event) {
+      const sidebar = document.getElementById('sidebar');
+      const menuIcon = document.querySelector('[onclick="toggleSidebar()"]');
+      
+      // if (!sidebar.contains(event.target) && event.target !== menuIcon) {
+      //   console.log(!sidebar.contains(event.target))
+      //   console.log(event.target, 'event.target')
+      //   console.log(menuIcon, 'menuIcon')
+      //     sidebar.classList.remove('active');
+      // }
+  });
+</script>
 
 </body>
 
